@@ -7,8 +7,4 @@ import { AppService } from './app.service';
   controllers: [AppController],
   providers: [AppService],
 })
-export class OrdersModule {
-    constructor(){
-        console.log('OrdersModule')
-    }
-}
+export class AppModule {}
