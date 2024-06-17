@@ -7,7 +7,7 @@ import {
   Post,
   Put,
 } from '@nestjs/common';
-import { BookService } from './app.service';
+import { BookService } from './book.service';
 
 @Controller('book')
 export class AppController {
