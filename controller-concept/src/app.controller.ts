@@ -12,8 +12,8 @@ import { BookService } from './book.service';
 @Controller('book')
 export class AppController {
   // constructor(private readonly bookService: BookService) {}
-  // public bookService: BookService = new BookService()
-  constructor(public bookService: BookService) {}
+  public bookService = new BookService()
+  // constructor(public bookService: BookService) {}
 
   @Get()
   @HttpCode(200)
