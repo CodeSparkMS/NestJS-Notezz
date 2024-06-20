@@ -13,7 +13,7 @@ export class BookController{
 
     @Post()
     addBook(@Body(new BookPipe) book:BookDto){
-        return book
+        return "Book Added..."
     }
 
 }
