@@ -16,5 +16,4 @@ export class BookController{
     addBook(@Body(new ValidationPipe) book:BookDto){    // Built in Pipe with use of class-validator and class-transformer
         return "Book Added..."
     }
-
 }
