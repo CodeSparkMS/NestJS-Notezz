@@ -11,7 +11,7 @@ export class BookController{
     }
 
     @Post('/add')
-    @UseGuards(BookGuard)
+    // @UseGuards(BookGuard)    
     addBook(){
         return 'new book added'
     }
