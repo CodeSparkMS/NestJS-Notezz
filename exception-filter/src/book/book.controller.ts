@@ -1,4 +1,4 @@
-import { BadRequestException, Controller, Get, UseFilters } from "@nestjs/common";
+import { BadRequestException, Controller, Get, HttpException, HttpStatus, UseFilters } from "@nestjs/common";
 import { BookException } from "./book.exception";
 import { BookCustomExceptionFilter } from "./book.exceptionFilter";
 
@@ -11,6 +11,8 @@ export class BookController{
             status:403,
             message:'Access Denied'
         })
+        // throw new BadRequestException('HI from me', HttpStatus.BAD_REQUEST)
+        // throw new HttpException('Forbidden', HttpStatus.FORBIDDEN);
         return 'new book added...'
     }
 
